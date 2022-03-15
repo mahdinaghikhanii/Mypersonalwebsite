@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-String faPrimaryFontFamily = 'IranYekan';
 const Color kpink = Color(0xFFDC9298);
 const Color kwhite = Color(0xFFFFFFFF);
 const Color kwhitemeloo = Color(0xFFECEFF1);
@@ -14,7 +13,7 @@ const Color kblackappbar = Color(0xFF000000);
 const Color kblue = Color(0xFF1E88E5);
 const Color korange = Color(0xFFFFA726);
 const Color grey = Colors.grey;
-
+const Color klightBlue = Color(0xFFE3F2FD);
 const IconData arrowdownleft = CupertinoIcons.arrow_down_left;
 const IconData arrowupright = CupertinoIcons.arrow_up_right;
 
@@ -23,4 +22,5 @@ class Constans {
   static const double padding = 20;
   static const double avatarRadius = 45;
   static const double kborderRadios = 18;
+  static const String iranYekan = "IranYekan";
 }

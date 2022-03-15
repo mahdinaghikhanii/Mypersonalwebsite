@@ -15,7 +15,7 @@ class HomeView extends StatelessWidget {
           children: <Widget>[
             const NavigationBars(),
             Expanded(
-                child: Row(
+                child: Column(
               // ignore: prefer_const_literals_to_create_immutables
               children: [CourseDetails()],
             ))
