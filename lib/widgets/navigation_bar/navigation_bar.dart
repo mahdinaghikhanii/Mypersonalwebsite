@@ -30,11 +30,11 @@ class NavigationBars extends StatelessWidget {
                       child: RichText(
                           text: const TextSpan(children: [
                     const TextSpan(
-                        text: "Mahdi naghikhan",
+                        text: "Mahdi naghikhani",
                         style: TextStyle(
                             fontWeight: FontWeight.bold, fontSize: 20)),
                     const TextSpan(
-                        text: 'i',
+                        text: '',
                         style: TextStyle(
                             fontFamily: "IranYekan",
                             fontWeight: FontWeight.bold,

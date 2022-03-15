@@ -1,6 +1,7 @@
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
+
 import 'package:flutter/material.dart';
 import 'package:mahdinaghikhani/theme/constant.dart';
-import 'package:mahdinaghikhani/widgets/centered_view/centered_view.dart';
 import 'package:mahdinaghikhani/widgets/course_details/curse_btn.dart';
 
 class CourseDetails extends StatelessWidget {
@@ -8,6 +9,7 @@ class CourseDetails extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // ignore: unused_local_variable
     final textTheme = Theme.of(context).textTheme;
     final size = MediaQuery.of(context).size;
     return Padding(
@@ -24,7 +26,6 @@ class CourseDetails extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.center,
-                // ignore: prefer_const_literals_to_create_immutables
                 children: <Widget>[
                   const Text(
                     'Hello!',
@@ -32,7 +33,7 @@ class CourseDetails extends StatelessWidget {
                         color: kblue,
                         fontWeight: FontWeight.w800,
                         height: 0.9,
-                        fontSize: 30),
+                        fontSize: 25),
                   ),
                   const SizedBox(
                     height: 30,
@@ -53,35 +54,42 @@ class CourseDetails extends StatelessWidget {
                     )
                   ])),
                   const SizedBox(
-                    height: 30,
+                    height: 10,
                   ),
                   const Text(
                     'A freelance mobile app developer',
                     style: TextStyle(fontSize: 25, height: 1.7, color: kblack),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 30,
                   ),
                   Row(
                     children: [
                       CourseBtn(
-                        text: "Hire me",
+                        text: "Hire me !",
                         color: kblue,
+                        textColor: kwhite,
+                        borderColor: kblue,
+                      ),
+                      SizedBox(
+                        width: 20,
                       ),
                       CourseBtn(
-                        text: "Hire me",
-                        color: kblue,
+                        text: "My Linkdin",
+                        color: klightBlue,
+                        borderColor: grey,
+                        textColor: grey,
                       )
                     ],
                   )
                 ],
               ),
             ),
-            Spacer(),
+            const Spacer(),
             Center(
-              child: Container(
-                  height: 480,
-                  width: 590,
+              child: SizedBox(
+                  height: 500,
+                  width: 600,
                   child: Center(
                       child: Image.asset(
                     'assets/img/mahdi.png',
