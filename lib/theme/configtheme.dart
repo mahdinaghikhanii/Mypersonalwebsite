@@ -36,10 +36,11 @@ class ConfigTheme {
               TextStyle(fontSize: 20, color: isDarkTheme ? kwhite : kblack),
           headlineLarge: const TextStyle(
               fontWeight: FontWeight.bold, fontSize: 20, color: korange),
-          headline5: TextStyle(
-              fontWeight: FontWeight.bold,
-              fontSize: 20,
-              color: isDarkTheme ? kwhite : kblack)),
+          headline5: const TextStyle(
+              fontWeight: FontWeight.w800,
+              height: 0.9,
+              fontSize: 50,
+              color: Colors.black)),
       primaryColor: isDarkTheme ? Colors.black : kwhite,
       backgroundColor: isDarkTheme ? Colors.black : kwhite,
       scaffoldBackgroundColor: isDarkTheme ? kblack : kwhite,

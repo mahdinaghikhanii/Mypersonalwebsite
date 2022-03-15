@@ -101,7 +101,7 @@ class _NavBarItem extends StatelessWidget {
       title,
       style: const TextStyle(
         fontSize: 14,
-        color: kblack,
+        color: Colors.black,
         fontFamily: Constans.iranYekan,
       ),
     );
