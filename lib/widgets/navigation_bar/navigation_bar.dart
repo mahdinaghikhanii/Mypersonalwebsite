@@ -68,20 +68,13 @@ class NavigationBars extends StatelessWidget {
                 onTap: () async =>
                     await launch('https://github.com/mahdinaghikhanii'),
                 child: ((Container(
-                    width: 120,
+                    width: 60,
                     height: 45,
-                    decoration: BoxDecoration(
-                        color: kblue, borderRadius: BorderRadius.circular(10)),
-                    child: const Center(
-                        child: Text(
-                      // ignore: unnecessary_string_escapes
-                      "View Github",
-                      style: TextStyle(
-                        fontFamily: Constans.iranYekan,
-                        color: kwhite,
-                        fontSize: 14,
-                      ),
-                    ))))),
+                    decoration:
+                        BoxDecoration(borderRadius: BorderRadius.circular(10)),
+                    child: Center(
+                      child: SvgPicture.asset('assets/logo/github.svg'),
+                    )))),
               ),
             ],
           )

@@ -1,5 +1,4 @@
 // ignore_for_file: prefer_const_constructors
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:mahdinaghikhani/widgets/centered_view/centered_view.dart';
 import 'package:mahdinaghikhani/widgets/course_details/course_details.dart';
@@ -10,11 +9,9 @@ class HomeView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ScrollConfiguration(
-      behavior: ScrollConfiguration.of(context).copyWith(
-          dragDevices: {PointerDeviceKind.touch, PointerDeviceKind.mouse}),
-      child: Scaffold(
-        body: CenteredView(
+    return Scaffold(
+      body: Scrollbar(
+        child: CenteredView(
           child: Column(
             children: <Widget>[
               const NavigationBars(),
