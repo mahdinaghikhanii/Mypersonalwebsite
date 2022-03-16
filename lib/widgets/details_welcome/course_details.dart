@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:mahdinaghikhani/theme/constant.dart';
-import 'package:mahdinaghikhani/widgets/course_details/curse_btn.dart';
+import 'package:mahdinaghikhani/widgets/details_welcome/curse_btn.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class CourseDetails extends StatelessWidget {

@@ -13,7 +13,8 @@ const Color kblackappbar = Color(0xFF000000);
 const Color kblue = Color(0xFF1E88E5);
 const Color korange = Color(0xFFFFA726);
 const Color grey = Colors.grey;
-const Color klightBlue = Color(0xFFE3F2FD);
+const Color klightBlue = Color(0xFFBBDEFB);
+const Color mediomBlue = Color(0xFFBDBDBD);
 const Color lightblack = Color(0xFF424242);
 
 const IconData arrowdownleft = CupertinoIcons.arrow_down_left;
