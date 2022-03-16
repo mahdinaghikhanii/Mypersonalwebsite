@@ -90,12 +90,16 @@ class _NavBarItem extends StatelessWidget {
   const _NavBarItem({required this.title});
   @override
   Widget build(BuildContext context) {
-    return Text(
-      title,
-      style: const TextStyle(
-        fontSize: 14,
-        color: Colors.black,
-        fontFamily: Constans.iranYekan,
+    return InkWell(
+      highlightColor: kblue,
+      borderRadius: BorderRadius.circular(5),
+      child: Text(
+        title,
+        style: const TextStyle(
+          fontSize: 14,
+          color: Colors.black,
+          fontFamily: Constans.iranYekan,
+        ),
       ),
     );
   }

@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:mahdinaghikhani/theme/constant.dart';
 import 'package:mahdinaghikhani/widgets/course_details/curse_btn.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class CourseDetails extends StatelessWidget {
   const CourseDetails({Key? key}) : super(key: key);
@@ -70,6 +71,7 @@ class CourseDetails extends StatelessWidget {
                         color: kblue,
                         textColor: kwhite,
                         borderColor: kblue,
+                        ontap: () async {},
                       ),
                       SizedBox(
                         width: 20,
@@ -79,6 +81,9 @@ class CourseDetails extends StatelessWidget {
                         color: klightBlue,
                         borderColor: grey,
                         textColor: grey,
+                        ontap: () async {
+                          await launch("https://www.linkedin.com/feed/");
+                        },
                       )
                     ],
                   )
