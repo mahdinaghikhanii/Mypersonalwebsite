@@ -9,6 +9,25 @@ class NavigationBars extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    return LayoutBuilder(
+      builder: (BuildContext context, BoxConstraints constraints) {
+        if (constraints.maxWidth > 1200) {
+          return DesktopNavbar();
+        } else if (constraints.maxWidth > 800 && constraints.maxWidth < 1200) {
+          return DesktopNavbar();
+        } else {
+          return MobileNavbar();
+        }
+      },
+    );
+  }
+}
+
+class DesktopNavbar extends StatelessWidget {
+  const DesktopNavbar({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
     return SizedBox(
       height: 100,
       child: Row(
@@ -79,6 +98,78 @@ class NavigationBars extends StatelessWidget {
             ],
           )
         ],
+      ),
+    );
+  }
+}
+
+class MobileNavbar extends StatelessWidget {
+  const MobileNavbar({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return SafeArea(
+      child: SizedBox(
+        height: 100,
+        child: Column(
+          children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                SizedBox(
+                    height: 70,
+                    width: 250,
+                    child: Row(
+                      children: [
+                        SvgPicture.asset(
+                          'assets/logo/flutter.svg',
+                          width: 30,
+                        ),
+                        const SizedBox(
+                          width: 5,
+                        ),
+                        Center(
+                            child: RichText(
+                                text: const TextSpan(children: [
+                          const TextSpan(
+                              text: "Mahdi naghikhani",
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 16,
+                                  color: Colors.black)),
+                          const TextSpan(
+                              text: '',
+                              style: TextStyle(
+                                  fontFamily: "IranYekan",
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 20,
+                                  color: kblue))
+                        ]))),
+                      ],
+                    )),
+                Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: <Widget>[
+                    InkWell(
+                      highlightColor: kblue,
+                      borderRadius: BorderRadius.circular(5),
+                      onTap: () async =>
+                          await launch('https://github.com/mahdinaghikhanii'),
+                      child: ((Container(
+                          width: 60,
+                          height: 45,
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(10)),
+                          child: Center(
+                            child: SvgPicture.asset('assets/logo/github.svg'),
+                          )))),
+                    ),
+                  ],
+                )
+              ],
+            ),
+          ],
+        ),
       ),
     );
   }
