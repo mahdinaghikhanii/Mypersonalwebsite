@@ -15,20 +15,21 @@ class ConfigTheme {
       textTheme: TextTheme(
           headline4:
               TextStyle(fontSize: 14, color: isDarkTheme ? kwhite : kblack),
-          headline6: TextStyle(
-              fontSize: 14,
-              color: isDarkTheme ? kwhite : kblack,
-              fontWeight: FontWeight.bold),
-          bodyText1:
-              TextStyle(fontSize: 16, color: isDarkTheme ? kwhite : kblack),
-          subtitle1: TextStyle(
-              color: isDarkTheme ? kwhite : kblack,
-              fontSize: 24,
-              fontWeight: FontWeight.bold),
-          subtitle2: TextStyle(
-              color: isDarkTheme ? kwhite : kwhite,
-              fontWeight: FontWeight.bold,
-              fontSize: 18),
+          headline6: const TextStyle(
+              fontWeight: FontWeight.w800, fontSize: 26, color: Colors.white),
+          bodyText1: TextStyle(
+            fontSize: 16,
+            color: isDarkTheme ? kwhite : kblack,
+          ),
+          subtitle1: const TextStyle(
+            fontWeight: FontWeight.bold,
+            fontSize: 20,
+          ),
+          subtitle2: const TextStyle(
+            color: lightblack,
+            fontWeight: FontWeight.bold,
+            fontSize: 16,
+          ),
           button: TextStyle(
               color: isDarkTheme ? kwhite : kblack,
               fontSize: Constans.fontButtonSisze),
@@ -37,10 +38,10 @@ class ConfigTheme {
           headlineLarge: const TextStyle(
               fontWeight: FontWeight.bold, fontSize: 20, color: korange),
           headline5: const TextStyle(
-              fontWeight: FontWeight.w800,
-              height: 0.9,
-              fontSize: 50,
-              color: Colors.black)),
+            fontWeight: FontWeight.w800,
+            height: 0.9,
+            fontSize: 50,
+          )),
       primaryColor: isDarkTheme ? Colors.black : kwhite,
       backgroundColor: isDarkTheme ? Colors.black : kwhite,
       scaffoldBackgroundColor: isDarkTheme ? kblack : kwhite,

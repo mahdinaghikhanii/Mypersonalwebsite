@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mahdinaghikhani/theme/constant.dart';
 
 class CourseBtn extends StatelessWidget {
   const CourseBtn(
@@ -31,7 +32,8 @@ class CourseBtn extends StatelessWidget {
         child: Center(
           child: Text(
             text,
-            style: TextStyle(color: textColor),
+            style: TextStyle(
+                color: textColor, fontFamily: Constans.iranYekan, fontSize: 14),
           ),
         ),
       ),

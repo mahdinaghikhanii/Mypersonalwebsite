@@ -7,6 +7,7 @@ class DetailsAboutMe extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // ignore: unused_local_variable
     final textTheme = Theme.of(context).textTheme;
     final size = MediaQuery.of(context).size;
     return Padding(
@@ -33,25 +34,62 @@ class DetailsAboutMe extends StatelessWidget {
                             'assets/img/imgaboutme.png',
                           )),
                       const SizedBox(
-                        width: 80,
+                        width: 40,
                       ),
                       Column(
                         mainAxisAlignment: MainAxisAlignment.start,
                         crossAxisAlignment: CrossAxisAlignment.start,
+                        // ignore: prefer_const_literals_to_create_immutables
                         children: [
-                          Padding(
-                            padding: const EdgeInsets.only(top: 3),
-                            child: Text(
-                              "About me",
-                              style: Theme.of(context).textTheme.headline5,
-                            ),
+                          const Padding(
+                            padding: EdgeInsets.only(top: 3),
+                            child: Text("About me",
+                                style: TextStyle(
+                                    fontFamily: Constans.iranYekan,
+                                    fontWeight: FontWeight.w800,
+                                    fontSize: 26)),
                           ),
                           const SizedBox(
-                            height: 50,
+                            height: 40,
                           ),
-                          TextDetailRow(
+                          const TextDetailRow(
                             detail: 'Mahdi',
                             about: 'Name:',
+                          ),
+                          const SizedBox(
+                            height: 25,
+                          ),
+                          const TextDetailRow(
+                            about: 'Family:',
+                            detail: 'Naghkhani',
+                          ),
+                          const SizedBox(
+                            height: 25,
+                          ),
+                          const TextDetailRow(
+                            about: 'Date of Birth:',
+                            detail: '29 October 2000',
+                          ),
+                          const SizedBox(
+                            height: 25,
+                          ),
+                          const TextDetailRow(
+                            about: 'Email:',
+                            detail: 'Mahdinkh7@gmail.com',
+                          ),
+                          const SizedBox(
+                            height: 25,
+                          ),
+                          const TextDetailRow(
+                            about: 'phone number:',
+                            detail: '09339181455',
+                          ),
+                          const SizedBox(
+                            height: 25,
+                          ),
+                          const TextDetailRow(
+                            about: 'Location:',
+                            detail: 'Iran  rasht',
                           )
                         ],
                       )
@@ -67,16 +105,28 @@ class TextDetailRow extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.start,
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Text(about),
-        const SizedBox(
-          width: 120,
-        ),
-        Text(detail)
-      ],
+    return SizedBox(
+      width: 400,
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            about,
+            style: const TextStyle(
+              fontWeight: FontWeight.w800,
+              fontSize: 16,
+            ),
+          ),
+          const Spacer(),
+          Text(detail,
+              textAlign: TextAlign.right,
+              style: const TextStyle(
+                  fontSize: 16,
+                  fontFamily: Constans.iranYekan,
+                  color: lightblack)),
+        ],
+      ),
     );
   }
 }
