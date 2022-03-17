@@ -1,4 +1,5 @@
-import 'dart:ui';
+
+// ignore_for_file: unused_local_variable
 
 import 'package:flutter/material.dart';
 import 'package:mahdinaghikhani/theme/constant.dart';
@@ -37,7 +38,7 @@ class DetailsAboutMeTablet extends StatelessWidget {
                         width: 20,
                       ),
                       Column(
-                        mainAxisAlignment: MainAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         // ignore: prefer_const_literals_to_create_immutables
                         children: [

@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:mahdinaghikhani/theme/constant.dart';
 import 'package:mahdinaghikhani/widgets/centered_view/centered_view.dart';
 import 'package:mahdinaghikhani/widgets/details_about_me/details_about_me.dart';
+import 'package:mahdinaghikhani/widgets/fotter/fotter.dart';
 import 'package:mahdinaghikhani/widgets/navigation_bar/navigation_bar.dart';
 import '../../widgets/details_welcome/course_details.dart';
 
@@ -30,7 +31,8 @@ class HomeView extends StatelessWidget {
                     SizedBox(
                       height: 30,
                     ),
-                    DetailsAboutMe()
+                    DetailsAboutMe(),
+                    Footer(),
                   ],
                 )
               ],

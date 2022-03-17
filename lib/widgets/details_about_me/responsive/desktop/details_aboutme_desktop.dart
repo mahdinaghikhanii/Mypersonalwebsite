@@ -6,6 +6,7 @@ class DetailsAboutMeDesktop extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // ignore: unused_local_variable
     final textTheme = Theme.of(context).textTheme;
     final size = MediaQuery.of(context).size;
     return Padding(
@@ -35,7 +36,7 @@ class DetailsAboutMeDesktop extends StatelessWidget {
                         width: 40,
                       ),
                       Column(
-                        mainAxisAlignment: MainAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         // ignore: prefer_const_literals_to_create_immutables
                         children: [
