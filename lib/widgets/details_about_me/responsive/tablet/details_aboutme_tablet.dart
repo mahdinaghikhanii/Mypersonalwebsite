@@ -1,4 +1,3 @@
-
 // ignore_for_file: unused_local_variable
 
 import 'package:flutter/material.dart';
@@ -12,7 +11,7 @@ class DetailsAboutMeTablet extends StatelessWidget {
     final textTheme = Theme.of(context).textTheme;
     final size = MediaQuery.of(context).size;
     return Padding(
-        padding: const EdgeInsets.only(left: 15, right: 15),
+        padding: const EdgeInsets.only(left: 20, right: 15),
         child: Center(
             child: Container(
                 decoration: BoxDecoration(
@@ -56,7 +55,7 @@ class DetailsAboutMeTablet extends StatelessWidget {
                           const Text(
                             'mahdi an Expert Flutter Developer at your service.\nI am an expert flutter developer & I can definitely\nhelp you get your App up & running on the App store.\nI am dedicated, enthusiastic & focused on my work\nin order to satisfy you & fulfill your needs.',
                             style: TextStyle(
-                                color: lightblack, fontSize: 15, height: 2),
+                                color: lightblack, fontSize: 14, height: 2),
                           )
                         ],
                       )

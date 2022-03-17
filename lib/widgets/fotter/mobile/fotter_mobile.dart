@@ -43,13 +43,6 @@ class FotterMobile extends StatelessWidget {
                   width: 15,
                 ),
                 SocialNetwork(
-                  text: "Linkin",
-                  logo: "assets/logo/in.png",
-                ),
-                SizedBox(
-                  width: 15,
-                ),
-                SocialNetwork(
                   text: "Whatsapp",
                   logo: "assets/logo/whatsapp.png",
                 )

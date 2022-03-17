@@ -13,7 +13,7 @@ class TabletDetailsWelcome extends StatelessWidget {
     final textTheme = Theme.of(context).textTheme;
     final size = MediaQuery.of(context).size;
     return Padding(
-      padding: const EdgeInsets.all(8.0),
+      padding: const EdgeInsets.all(0.0),
       child: Center(
         child: Container(
           decoration: BoxDecoration(
@@ -49,7 +49,7 @@ class TabletDetailsWelcome extends StatelessWidget {
                       style: TextStyle(
                           fontWeight: FontWeight.w800,
                           height: 0.9,
-                          fontSize: 40,
+                          fontSize: 36,
                           color: Colors.black),
                     )
                   ])),
