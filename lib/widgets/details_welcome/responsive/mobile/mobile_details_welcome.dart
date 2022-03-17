@@ -26,7 +26,7 @@ class MobileDetailsWelcome extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Padding(
-                  padding: const EdgeInsets.all(0.0),
+                  padding: const EdgeInsets.all(8.0),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -47,13 +47,13 @@ class MobileDetailsWelcome extends StatelessWidget {
                         TextSpan(
                             text: "I'm ",
                             style: TextStyle(
-                                height: 0.9, fontSize: 40, color: lightblack)),
+                                height: 0.9, fontSize: 30, color: lightblack)),
                         TextSpan(
                           text: "Flutter Developer",
                           style: TextStyle(
                               fontWeight: FontWeight.w800,
                               height: 0.9,
-                              fontSize: 36,
+                              fontSize: 30,
                               color: Colors.black),
                         )
                       ])),

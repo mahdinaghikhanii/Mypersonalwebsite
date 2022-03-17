@@ -16,8 +16,7 @@ class DetailsAboutMeMobile extends StatelessWidget {
             decoration: BoxDecoration(
                 color: Colors.transparent,
                 borderRadius: BorderRadius.circular(20)),
-            width: size.width * 0.70,
-            height: size.height * 0.60,
+            width: size.width * 0.82,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
@@ -65,16 +64,16 @@ class DetailsAboutMeMobile extends StatelessWidget {
                     children: [
                       Column(
                         mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.center,
                         // ignore: prefer_const_literals_to_create_immutables
                         children: [
                           const SizedBox(
                             height: 30,
                           ),
                           const Text(
-                            'mahdi an Expert Flutter Developer at your service.\nI am an expert flutter developer & I can definitely\nhelp you get your App up & running on the App store.\nI am dedicated, enthusiastic & focused on my work\nin order to satisfy you & fulfill your needs.',
+                            'mahdi an Expert Flutter Developer at your service.\nI am an expert flutter developer & I can definitely\nhelp you get your App up & running on the Appstore.\nI am dedicated, enthusiastic & focused on my work\nin order to satisfy you & fulfill your needs.',
                             style: TextStyle(
-                                color: lightblack, fontSize: 15, height: 2),
+                                color: lightblack, fontSize: 13, height: 2),
                           )
                         ],
                       )

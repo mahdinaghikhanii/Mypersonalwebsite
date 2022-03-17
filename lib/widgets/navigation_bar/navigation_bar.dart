@@ -110,7 +110,7 @@ class MobileNavbar extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: SizedBox(
-        height: 100,
+        height: 70,
         child: Column(
           children: [
             Row(
@@ -157,7 +157,7 @@ class MobileNavbar extends StatelessWidget {
                           await launch('https://github.com/mahdinaghikhanii'),
                       child: ((Container(
                           width: 60,
-                          height: 45,
+                          height: 50,
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(10)),
                           child: Center(
