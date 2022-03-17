@@ -61,9 +61,9 @@ class MobileDetailsWelcome extends StatelessWidget {
                         height: 10,
                       ),
                       const Text(
-                        'A freelance mobile app developer',
+                        'an Expert Flutter Developer at your service.',
                         style:
-                            TextStyle(fontSize: 20, height: 1.7, color: kblack),
+                            TextStyle(fontSize: 18, height: 1.7, color: kblack),
                       ),
                       const SizedBox(
                         height: 28,

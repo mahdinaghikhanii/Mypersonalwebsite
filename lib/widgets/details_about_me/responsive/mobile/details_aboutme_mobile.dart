@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:mahdinaghikhani/theme/constant.dart';
-import 'package:mahdinaghikhani/widgets/text_detail_title/Text_detail_title.dart';
 
 class DetailsAboutMeMobile extends StatelessWidget {
   const DetailsAboutMeMobile({Key? key}) : super(key: key);
@@ -16,7 +15,7 @@ class DetailsAboutMeMobile extends StatelessWidget {
                 color: Colors.transparent,
                 borderRadius: BorderRadius.circular(20)),
             width: size.width * 0.70,
-            height: size.height * 0.70,
+            height: size.height * 0.60,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
@@ -70,44 +69,10 @@ class DetailsAboutMeMobile extends StatelessWidget {
                           const SizedBox(
                             height: 30,
                           ),
-                          const TextDetailTitle(
-                            detail: 'Mahdi',
-                            about: 'Name:',
-                          ),
-                          const SizedBox(
-                            height: 25,
-                          ),
-                          const TextDetailTitle(
-                            about: 'Family:',
-                            detail: 'Naghkhani',
-                          ),
-                          const SizedBox(
-                            height: 25,
-                          ),
-                          const TextDetailTitle(
-                            about: 'Date of Birth:',
-                            detail: '29 October 2000',
-                          ),
-                          const SizedBox(
-                            height: 25,
-                          ),
-                          const TextDetailTitle(
-                            about: 'Email:',
-                            detail: 'Mahdinkh7@gmail.com',
-                          ),
-                          const SizedBox(
-                            height: 25,
-                          ),
-                          const TextDetailTitle(
-                            about: 'phone number:',
-                            detail: '09339181455',
-                          ),
-                          const SizedBox(
-                            height: 25,
-                          ),
-                          const TextDetailTitle(
-                            about: 'Location:',
-                            detail: 'Iran  rasht',
+                          const Text(
+                            'mahdi an Expert Flutter Developer at your service.\nI am an expert flutter developer & I can definitely\nhelp you get your App up & running on the App store.\nI am dedicated, enthusiastic & focused on my work\nin order to satisfy you & fulfill your needs.',
+                            style: TextStyle(
+                                color: lightblack, fontSize: 15, height: 2),
                           )
                         ],
                       )

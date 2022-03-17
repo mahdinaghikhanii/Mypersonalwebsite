@@ -1,6 +1,7 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:mahdinaghikhani/theme/constant.dart';
-import 'package:mahdinaghikhani/widgets/text_detail_title/Text_detail_title.dart';
 
 class DetailsAboutMeTablet extends StatelessWidget {
   const DetailsAboutMeTablet({Key? key}) : super(key: key);
@@ -10,7 +11,7 @@ class DetailsAboutMeTablet extends StatelessWidget {
     final textTheme = Theme.of(context).textTheme;
     final size = MediaQuery.of(context).size;
     return Padding(
-        padding: const EdgeInsets.only(left: 20, right: 20),
+        padding: const EdgeInsets.only(left: 15, right: 15),
         child: Center(
             child: Container(
                 decoration: BoxDecoration(
@@ -33,7 +34,7 @@ class DetailsAboutMeTablet extends StatelessWidget {
                             'assets/img/imgaboutme.png',
                           )),
                       const SizedBox(
-                        width: 40,
+                        width: 20,
                       ),
                       Column(
                         mainAxisAlignment: MainAxisAlignment.start,
@@ -46,49 +47,15 @@ class DetailsAboutMeTablet extends StatelessWidget {
                                 style: TextStyle(
                                     fontFamily: Constans.iranYekan,
                                     fontWeight: FontWeight.w800,
-                                    fontSize: 20)),
+                                    fontSize: 22)),
                           ),
                           const SizedBox(
-                            height: 30,
+                            height: 10,
                           ),
-                          const TextDetailTitle(
-                            detail: 'Mahdi',
-                            about: 'Name:',
-                          ),
-                          const SizedBox(
-                            height: 25,
-                          ),
-                          const TextDetailTitle(
-                            about: 'Family:',
-                            detail: 'Naghkhani',
-                          ),
-                          const SizedBox(
-                            height: 25,
-                          ),
-                          const TextDetailTitle(
-                            about: 'Date of Birth:',
-                            detail: '29 October 2000',
-                          ),
-                          const SizedBox(
-                            height: 25,
-                          ),
-                          const TextDetailTitle(
-                            about: 'Email:',
-                            detail: 'Mahdinkh7@gmail.com',
-                          ),
-                          const SizedBox(
-                            height: 25,
-                          ),
-                          const TextDetailTitle(
-                            about: 'phone number:',
-                            detail: '09339181455',
-                          ),
-                          const SizedBox(
-                            height: 25,
-                          ),
-                          const TextDetailTitle(
-                            about: 'Location:',
-                            detail: 'Iran  rasht',
+                          const Text(
+                            'mahdi an Expert Flutter Developer at your service.\nI am an expert flutter developer & I can definitely\nhelp you get your App up & running on the App store.\nI am dedicated, enthusiastic & focused on my work\nin order to satisfy you & fulfill your needs.',
+                            style: TextStyle(
+                                color: lightblack, fontSize: 15, height: 2),
                           )
                         ],
                       )
