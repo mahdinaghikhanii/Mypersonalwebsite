@@ -47,13 +47,13 @@ class MobileDetailsWelcome extends StatelessWidget {
                         TextSpan(
                             text: "I'm ",
                             style: TextStyle(
-                                height: 0.9, fontSize: 30, color: lightblack)),
+                                height: 0.9, fontSize: 28, color: lightblack)),
                         TextSpan(
                           text: "Flutter Developer",
                           style: TextStyle(
                               fontWeight: FontWeight.w800,
                               height: 0.9,
-                              fontSize: 30,
+                              fontSize: 28,
                               color: Colors.black),
                         )
                       ])),

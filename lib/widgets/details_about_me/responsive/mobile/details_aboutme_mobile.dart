@@ -11,12 +11,12 @@ class DetailsAboutMeMobile extends StatelessWidget {
     final textTheme = Theme.of(context).textTheme;
     final size = MediaQuery.of(context).size;
     return Padding(
-        padding: const EdgeInsets.only(left: 10, right: 10),
+        padding: const EdgeInsets.only(left: 5, right: 5),
         child: Container(
             decoration: BoxDecoration(
                 color: Colors.transparent,
                 borderRadius: BorderRadius.circular(20)),
-            width: size.width * 0.82,
+            width: size.width,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
@@ -25,8 +25,8 @@ class DetailsAboutMeMobile extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Container(
-                        height: 210,
-                        width: 250,
+                        height: 199,
+                        width: 235,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20),
                           color: mediomBlue,
