@@ -156,7 +156,7 @@ class MobileNavbar extends StatelessWidget {
                       onTap: () async =>
                           await launch('https://github.com/mahdinaghikhanii'),
                       child: ((Container(
-                          width: 60,
+                          width: 44,
                           height: 50,
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(10)),

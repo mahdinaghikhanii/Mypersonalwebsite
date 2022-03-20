@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mahdinaghikhani/widgets/social_network/social_network.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class FotterMobile extends StatelessWidget {
   const FotterMobile({Key? key}) : super(key: key);
@@ -27,24 +28,29 @@ class FotterMobile extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
-              children: const [
+              children: [
                 SocialNetwork(
                   text: "Telegram",
                   logo: "assets/logo/tele.png",
+                  ontap: () async {},
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 15,
                 ),
                 SocialNetwork(
                   text: "Twitter",
                   logo: "assets/logo/twitter.png",
+                  ontap: () async {
+                    await launch('https://twitter.com/mahdinaghikhani');
+                  },
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 15,
                 ),
                 SocialNetwork(
                   text: "Whatsapp",
                   logo: "assets/logo/whatsapp.png",
+                  ontap: () {},
                 )
               ],
             )
