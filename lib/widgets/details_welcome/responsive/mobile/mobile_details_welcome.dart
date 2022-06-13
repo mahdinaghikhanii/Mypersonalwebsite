@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:mahdinaghikhani/theme/constant.dart';
-import 'package:url_launcher/url_launcher.dart';
+import 'package:url_launcher/url_launcher_string.dart';
 
 import '../../curse_btn.dart';
 
@@ -86,7 +86,8 @@ class MobileDetailsWelcome extends StatelessWidget {
                             borderColor: grey,
                             textColor: grey,
                             ontap: () async {
-                              await launch("https://www.linkedin.com/feed/");
+                              await launchUrlString(
+                                  "https://www.linkedin.com/feed/");
                             },
                           )
                         ],

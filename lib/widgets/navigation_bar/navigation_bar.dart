@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:mahdinaghikhani/theme/constant.dart';
-import 'package:url_launcher/url_launcher.dart';
+import 'package:url_launcher/url_launcher_string.dart';
 
 class NavigationBars extends StatelessWidget {
   const NavigationBars({Key? key}) : super(key: key);
@@ -84,8 +84,8 @@ class DesktopNavbar extends StatelessWidget {
               InkWell(
                 highlightColor: kblue,
                 borderRadius: BorderRadius.circular(5),
-                onTap: () async =>
-                    await launch('https://github.com/mahdinaghikhanii'),
+                onTap: () async => await launchUrlString(
+                    'https://github.com/mahdinaghikhanii'),
                 child: ((Container(
                     width: 60,
                     height: 45,
@@ -153,8 +153,8 @@ class MobileNavbar extends StatelessWidget {
                     InkWell(
                       highlightColor: kblue,
                       borderRadius: BorderRadius.circular(5),
-                      onTap: () async =>
-                          await launch('https://github.com/mahdinaghikhanii'),
+                      onTap: () async => await launchUrlString(
+                          'https://github.com/mahdinaghikhanii'),
                       child: ((Container(
                           width: 44,
                           height: 50,

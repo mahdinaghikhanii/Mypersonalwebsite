@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:mahdinaghikhani/theme/constant.dart';
 import 'package:mahdinaghikhani/widgets/details_welcome/curse_btn.dart';
-import 'package:url_launcher/url_launcher.dart';
+import 'package:url_launcher/url_launcher_string.dart';
 
 class DesktopCourseDetails extends StatelessWidget {
   const DesktopCourseDetails({Key? key}) : super(key: key);
@@ -81,7 +81,8 @@ class DesktopCourseDetails extends StatelessWidget {
                         borderColor: grey,
                         textColor: grey,
                         ontap: () async {
-                          await launch("https://www.linkedin.com/feed/");
+                          await launchUrlString(
+                              "https://www.linkedin.com/feed/");
                         },
                       )
                     ],

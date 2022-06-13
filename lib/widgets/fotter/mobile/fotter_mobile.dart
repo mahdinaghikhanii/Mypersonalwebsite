@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:mahdinaghikhani/widgets/social_network/social_network.dart';
-import 'package:url_launcher/url_launcher.dart';
+import 'package:url_launcher/url_launcher_string.dart';
+
+import '../../social_network/social_network.dart';
 
 class FotterMobile extends StatelessWidget {
   const FotterMobile({Key? key}) : super(key: key);
@@ -41,7 +42,8 @@ class FotterMobile extends StatelessWidget {
                   text: "Twitter",
                   logo: "assets/logo/twitter.png",
                   ontap: () async {
-                    await launch('https://twitter.com/mahdinaghikhani');
+                    await launchUrlString(
+                        'https://twitter.com/mahdinaghikhani');
                   },
                 ),
                 const SizedBox(
