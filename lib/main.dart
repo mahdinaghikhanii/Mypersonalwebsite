@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:mahdinaghikhani/views/home/home_views.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 
 void main() {
-  runApp(const MyApp());
+  WidgetsFlutterBinding.ensureInitialized();
+  runApp(
+      const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -12,7 +15,6 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-     
       debugShowCheckedModeBanner: false,
       title: '',
       theme: ThemeData(
