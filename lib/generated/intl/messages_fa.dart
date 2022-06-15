@@ -24,16 +24,19 @@ class MessageLookup extends MessageLookupByLibrary {
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "home_Discourd": MessageLookupByLibrary.simpleMessage("دیسکورد"),
         "home_Whatsspp": MessageLookupByLibrary.simpleMessage("واتس اپ"),
-        "home_about_me": MessageLookupByLibrary.simpleMessage("About me"),
+        "home_about_me": MessageLookupByLibrary.simpleMessage("در مورد من"),
         "home_afreelancermobile": MessageLookupByLibrary.simpleMessage(
-            "A freelance mobile app developer"),
+            "یک توسعه دهنده نرم افزار موبایل"),
+        "home_detail_aboutme": MessageLookupByLibrary.simpleMessage(
+            "mahdi an Expert Flutter Developer at your service.\nI am an expert flutter developer & I can definitely\nhelp you get your App up & running on the App store.\nI am dedicated, enthusiastic & focused on my work\nin order to satisfy you & fulfill your needs."),
+        "home_flutterdeveloper":
+            MessageLookupByLibrary.simpleMessage(" توسعه دهنده فلاترم !"),
         "home_hello": MessageLookupByLibrary.simpleMessage("سلام!"),
-        "home_hireme": MessageLookupByLibrary.simpleMessage("Hire me !"),
-        "home_imflutterdeveloper":
-            MessageLookupByLibrary.simpleMessage("I\'m Flutter Developer"),
+        "home_hireme": MessageLookupByLibrary.simpleMessage("استخدامم کن‌!"),
+        "home_im": MessageLookupByLibrary.simpleMessage("من"),
         "home_mahdinaghkhani":
             MessageLookupByLibrary.simpleMessage("مهدی نقی خانی"),
         "home_telegram": MessageLookupByLibrary.simpleMessage("تلگرام"),
-        "homelinkdin": MessageLookupByLibrary.simpleMessage("My Linkdin")
+        "homelinkdin": MessageLookupByLibrary.simpleMessage("لینکدین من")
       };
 }

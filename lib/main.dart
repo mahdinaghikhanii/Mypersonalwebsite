@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:provider/provider.dart';
+import 'package:url_strategy/url_strategy.dart';
 
 import 'generated/l10n.dart';
 import 'provider/language_provider.dart';
@@ -10,6 +11,7 @@ LanguageProvider languageProvider = LanguageProvider();
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  setPathUrlStrategy();
   await languageProvider.featchlocal();
   runApp(MyApp(languageProvider: languageProvider));
 }

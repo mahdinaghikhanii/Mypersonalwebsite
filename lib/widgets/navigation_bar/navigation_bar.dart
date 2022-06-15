@@ -1,7 +1,9 @@
-// ignore_for_file: unnecessary_const, prefer_const_constructors
+// ignore_for_file: unnecessary_const, prefer_const_constructors, unrelated_type_equality_checks
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:mahdinaghikhani/generated/l10n.dart';
+import 'package:mahdinaghikhani/main.dart';
+import 'package:mahdinaghikhani/mudole/extension.dart';
 import 'package:mahdinaghikhani/theme/constant.dart';
 import 'package:mahdinaghikhani/widgets/button_dropdown/button_dropdown.dart';
 
@@ -39,14 +41,14 @@ class DesktopNavbar extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           SizedBox(
-              height: 80,
-              width: 600,
+              height: 70,
+              width: 400,
               child: Row(
                 children: [
-                  /*  SvgPicture.asset(
+                  SvgPicture.asset(
                     'assets/logo/flutter.svg',
                     width: 40,
-                  ),*/
+                  ),
                   const SizedBox(
                     width: 5,
                   ),
@@ -55,7 +57,7 @@ class DesktopNavbar extends StatelessWidget {
                           style: TextStyle(
                               fontWeight: FontWeight.bold, fontSize: 20))),
                   SizedBox(
-                    width: 20,
+                    width: 22,
                   ),
                   ButtonDropDown()
                 ],
@@ -64,18 +66,18 @@ class DesktopNavbar extends StatelessWidget {
             mainAxisSize: MainAxisSize.min,
             children: <Widget>[
               _NavBarItem(
-                title: "Discourd",
+                title: context.localText.home_Discourd,
               ),
               const SizedBox(
                 width: 30,
               ),
               _NavBarItem(
-                title: "Whatss app",
+                title: context.localText.home_Whatsspp,
               ),
               const SizedBox(
                 width: 30,
               ),
-              _NavBarItem(title: "Telegeram"),
+              _NavBarItem(title: context.localText.home_telegram),
               const SizedBox(
                 width: 30,
               ),
@@ -174,11 +176,12 @@ class _NavBarItem extends StatelessWidget {
       borderRadius: BorderRadius.circular(5),
       child: Text(
         title,
-        style: const TextStyle(
-          fontSize: 14,
-          color: Colors.black,
-          fontFamily: Constans.iranYekan,
-        ),
+        style: TextStyle(
+            fontSize: 14,
+            fontWeight: FontWeight.w600,
+            color: Colors.black.withOpacity(0.7),
+            fontFamily:
+                languageProvider.language == 'en' ? null : Constans.iranYekan),
       ),
     );
   }

@@ -27,10 +27,13 @@ class MessageLookup extends MessageLookupByLibrary {
         "home_about_me": MessageLookupByLibrary.simpleMessage("About me"),
         "home_afreelancermobile": MessageLookupByLibrary.simpleMessage(
             "A freelance mobile app developer"),
+        "home_detail_aboutme": MessageLookupByLibrary.simpleMessage(
+            "mahdi an Expert Flutter Developer at your service.\nI am an expert flutter developer & I can definitely\nhelp you get your App up & running on the App store.\nI am dedicated, enthusiastic & focused on my work\nin order to satisfy you & fulfill your needs."),
+        "home_flutterdeveloper":
+            MessageLookupByLibrary.simpleMessage("Flutter Developer"),
         "home_hello": MessageLookupByLibrary.simpleMessage("Hello!"),
         "home_hireme": MessageLookupByLibrary.simpleMessage("Hire me !"),
-        "home_imflutterdeveloper":
-            MessageLookupByLibrary.simpleMessage("I\'m Flutter Developer"),
+        "home_im": MessageLookupByLibrary.simpleMessage("I\'m"),
         "home_mahdinaghkhani":
             MessageLookupByLibrary.simpleMessage("Mahdinaghikhani"),
         "home_telegram": MessageLookupByLibrary.simpleMessage("Telegeram"),

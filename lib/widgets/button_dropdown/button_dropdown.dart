@@ -13,33 +13,48 @@ class ButtonDropDown extends StatefulWidget {
 }
 
 class _ButtonDropDownState extends State<ButtonDropDown> {
-  List<String> items = ['English', 'Persian'];
+  List<String> items = ['English', 'فارسی'];
 
   @override
   Widget build(BuildContext context) {
     final languageProvider = Provider.of<LanguageProvider>(context);
-    String selectItem = context.watch<LanguageProvider>().language == "fa"
-        ? items[0]
-        : items[1];
+    String? selectItem = "English";
     return Center(
-      child: DropdownButton<String>(
-          elevation: 1,
-          isDense: false,
-          focusColor: kwhitemeloo,
-          dropdownColor: kwhitemeloo,
-          value: selectItem,
-          items: items
-              .map((item) =>
-                  DropdownMenuItem(value: item, child: Text(selectItem)))
-              .toList(),
-          onChanged: (item) {
-            if (item == 'English') {
-              languageProvider.setLanguage('en');
-            }
-            if (item == "Persian") {
-              languageProvider.setLanguage('fa');
-            }
-          }),
+      child: SizedBox(
+        width: 90,
+        height: 40,
+        child: DropdownButtonFormField<String>(
+            elevation: 1,
+            isDense: false,
+            focusColor: kwhitemeloo,
+            style: TextStyle(
+                fontSize: 14,
+                fontWeight: FontWeight.w600,
+                color: Colors.black.withOpacity(0.6),
+                fontFamily: languageProvider.language == 'en'
+                    ? null
+                    : Constans.iranYekan),
+            // decoration: (),
+            decoration: const InputDecoration.collapsed(hintText: ''),
+            menuMaxHeight: 100,
+            dropdownColor: kwhitemeloo,
+            value: selectItem,
+            items: items
+                .map((item) =>
+                    DropdownMenuItem<String>(value: item, child: Text(item)))
+                .toList(),
+            onChanged: (item) {
+              setState(() {
+                selectItem = item;
+              });
+              if (item == 'English') {
+                languageProvider.setLanguage('en');
+              }
+              if (item == "فارسی") {
+                languageProvider.setLanguage('fa');
+              }
+            }),
+      ),
     );
   }
 }

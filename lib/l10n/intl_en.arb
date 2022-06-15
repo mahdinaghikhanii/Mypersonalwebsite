@@ -4,11 +4,13 @@
     "home_Whatsspp" : "Whatss app",
     "home_telegram" : "Telegeram",
     "home_hello" : "Hello!",
-    "home_imflutterdeveloper" : "I'm Flutter Developer",
+    "home_im" : "I'm",
+    "home_flutterdeveloper" : "Flutter Developer",
     "home_afreelancermobile" : "A freelance mobile app developer",
     "home_hireme" : "Hire me !",
     "homelinkdin" : "My Linkdin",
-    "home_about_me" : "About me"
+    "home_about_me" : "About me",
+    "home_detail_aboutme" : "mahdi an Expert Flutter Developer at your service.\nI am an expert flutter developer & I can definitely\nhelp you get your App up & running on the App store.\nI am dedicated, enthusiastic & focused on my work\nin order to satisfy you & fulfill your needs."
 
 
 }

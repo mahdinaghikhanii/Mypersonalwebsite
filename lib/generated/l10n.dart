@@ -100,11 +100,21 @@ class S {
     );
   }
 
-  /// `I'm Flutter Developer`
-  String get home_imflutterdeveloper {
+  /// `I'm`
+  String get home_im {
     return Intl.message(
-      'I\'m Flutter Developer',
-      name: 'home_imflutterdeveloper',
+      'I\'m',
+      name: 'home_im',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Flutter Developer`
+  String get home_flutterdeveloper {
+    return Intl.message(
+      'Flutter Developer',
+      name: 'home_flutterdeveloper',
       desc: '',
       args: [],
     );
@@ -145,6 +155,16 @@ class S {
     return Intl.message(
       'About me',
       name: 'home_about_me',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `mahdi an Expert Flutter Developer at your service.\nI am an expert flutter developer & I can definitely\nhelp you get your App up & running on the App store.\nI am dedicated, enthusiastic & focused on my work\nin order to satisfy you & fulfill your needs.`
+  String get home_detail_aboutme {
+    return Intl.message(
+      'mahdi an Expert Flutter Developer at your service.\nI am an expert flutter developer & I can definitely\nhelp you get your App up & running on the App store.\nI am dedicated, enthusiastic & focused on my work\nin order to satisfy you & fulfill your needs.',
+      name: 'home_detail_aboutme',
       desc: '',
       args: [],
     );

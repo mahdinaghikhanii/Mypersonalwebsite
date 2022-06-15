@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mahdinaghikhani/mudole/extension.dart';
 import 'package:mahdinaghikhani/theme/constant.dart';
 
 class DetailsAboutMeDesktop extends StatelessWidget {
@@ -40,10 +41,10 @@ class DetailsAboutMeDesktop extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         // ignore: prefer_const_literals_to_create_immutables
                         children: [
-                          const Padding(
-                            padding: EdgeInsets.only(top: 3),
-                            child: Text("About me",
-                                style: TextStyle(
+                          Padding(
+                            padding: const EdgeInsets.only(top: 3),
+                            child: Text(context.localText.home_about_me,
+                                style: const TextStyle(
                                     fontFamily: Constans.iranYekan,
                                     fontWeight: FontWeight.w800,
                                     fontSize: 26)),
@@ -51,9 +52,9 @@ class DetailsAboutMeDesktop extends StatelessWidget {
                           const SizedBox(
                             height: 10,
                           ),
-                          const Text(
-                            'mahdi an Expert Flutter Developer at your service.\nI am an expert flutter developer & I can definitely\nhelp you get your App up & running on the App store.\nI am dedicated, enthusiastic & focused on my work\nin order to satisfy you & fulfill your needs.',
-                            style: TextStyle(
+                          Text(
+                            context.localText.home_detail_aboutme,
+                            style: const TextStyle(
                                 color: lightblack, fontSize: 20, height: 2),
                           )
                         ],

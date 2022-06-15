@@ -26,9 +26,9 @@ class DesktopCourseDetails extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
-                  const Text(
-                    'Hello!',
-                    style: TextStyle(
+                  Text(
+                    context.localText.home_hello,
+                    style: const TextStyle(
                         color: kblue,
                         fontWeight: FontWeight.w800,
                         height: 0.9,
@@ -38,14 +38,14 @@ class DesktopCourseDetails extends StatelessWidget {
                     height: 30,
                   ),
                   RichText(
-                      text: const TextSpan(children: [
+                      text: TextSpan(children: [
                     TextSpan(
-                        text: "I'm ",
-                        style: TextStyle(
+                        text: context.localText.home_im,
+                        style: const TextStyle(
                             height: 0.9, fontSize: 50, color: lightblack)),
                     TextSpan(
-                      text: "Flutter Developer",
-                      style: TextStyle(
+                      text: context.localText.home_flutterdeveloper,
+                      style: const TextStyle(
                           fontWeight: FontWeight.w800,
                           height: 0.9,
                           fontSize: 50,
@@ -55,9 +55,10 @@ class DesktopCourseDetails extends StatelessWidget {
                   const SizedBox(
                     height: 10,
                   ),
-                  const Text(
-                    'A freelance mobile app developer',
-                    style: TextStyle(fontSize: 25, height: 1.7, color: kblack),
+                  Text(
+                    context.localText.home_afreelancermobile,
+                    style: const TextStyle(
+                        fontSize: 25, height: 1.7, color: kblack),
                   ),
                   const SizedBox(
                     height: 30,
@@ -65,7 +66,7 @@ class DesktopCourseDetails extends StatelessWidget {
                   Row(
                     children: [
                       CourseBtn(
-                        text: "Hire me !",
+                        text: context.localText.home_hireme,
                         color: kblue,
                         textColor: kwhite,
                         borderColor: kblue,
@@ -75,7 +76,7 @@ class DesktopCourseDetails extends StatelessWidget {
                         width: 20,
                       ),
                       CourseBtn(
-                        text: "My Linkdin",
+                        text: context.localText.homelinkdin,
                         color: klightBlue,
                         borderColor: grey,
                         textColor: grey,
