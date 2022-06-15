@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:mahdinaghikhani/views/home/home_views.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:mahdinaghikhani/generated/l10n.dart';
+import 'package:mahdinaghikhani/views/home/home_views.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
-  runApp(
-      const MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -15,6 +15,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      localizationsDelegates: const [
+        S.delegate,
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+      ],
+      supportedLocales: S.delegate.supportedLocales,
       debugShowCheckedModeBanner: false,
       title: '',
       theme: ThemeData(

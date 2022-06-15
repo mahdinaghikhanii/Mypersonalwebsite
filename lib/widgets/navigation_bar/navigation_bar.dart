@@ -1,6 +1,7 @@
 // ignore_for_file: unnecessary_const, prefer_const_constructors
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:mahdinaghikhani/generated/l10n.dart';
 import 'package:mahdinaghikhani/theme/constant.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
@@ -28,6 +29,7 @@ class DesktopNavbar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final localtext = S.of(context);
     return SizedBox(
       height: 100,
       child: Row(
@@ -47,9 +49,9 @@ class DesktopNavbar extends StatelessWidget {
                   ),
                   Center(
                       child: RichText(
-                          text: const TextSpan(children: [
-                    const TextSpan(
-                        text: "Mahdi naghikhani",
+                          text: TextSpan(children: [
+                    TextSpan(
+                        text: localtext.home_mahdinaghkhani,
                         style: TextStyle(
                             fontWeight: FontWeight.bold, fontSize: 20)),
                     const TextSpan(
@@ -108,6 +110,7 @@ class MobileNavbar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final textlocal = S.of(context);
     return SafeArea(
       child: SizedBox(
         height: 70,
@@ -130,9 +133,9 @@ class MobileNavbar extends StatelessWidget {
                         ),
                         Center(
                             child: RichText(
-                                text: const TextSpan(children: [
-                          const TextSpan(
-                              text: "Mahdi naghikhani",
+                                text: TextSpan(children: [
+                          TextSpan(
+                              text: textlocal.home_mahdinaghkhani,
                               style: TextStyle(
                                   fontWeight: FontWeight.bold,
                                   fontSize: 16,
