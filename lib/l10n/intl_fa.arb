@@ -1,50 +1,15 @@
 {
     "home_mahdinaghkhani" : "مهدی نقی خانی",
-    "home_Discourd" : "Discourd",
-    "home_Whatsspp" : "Whatss app",
-    "home_telegram" : "Telegeram"
+    "home_Discourd" : "دیسکورد",
+    "home_Whatsspp" : "واتس اپ",
+    "home_telegram" : "تلگرام",
+    "home_hello" : "سلام!",
+    "home_imflutterdeveloper" : "I'm Flutter Developer",
+    "home_afreelancermobile" : "A freelance mobile app developer",
+    "home_hireme" : "Hire me !",
+    "homelinkdin" : "My Linkdin",
+    "home_about_me" : "About me"
+
+    
 
 }
-class MDarkLightSwitch extends StatelessWidget {
-  const MDarkLightSwitch({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: () => context.themeBloc
-          .setTheme(context.isDark ? AppTheme.light : AppTheme.dark),
-      child: SizedBox(
-        width: 40,
-        height: 25,
-        child: Stack(
-          children: [
-            Container(
-              margin: const EdgeInsets.symmetric(horizontal: 8, vertical: 7),
-              height: 10,
-              width: 35,
-              decoration: BoxDecoration(
-                  color: context.accentColor.withOpacity(0.5),
-                  borderRadius: BorderRadius.circular(20)),
-            ),
-            context.isDark
-                ? Container()
-                : Align(
-                    alignment: Alignment.centerRight,
-                    child: FaIcon(
-                      FontAwesomeIcons.sun,
-                      color: Colors.yellow.shade700,
-                    ),
-                  ),
-            context.isDark
-                ? Align(
-                    alignment: Alignment.centerLeft,
-                    child: FaIcon(
-                      FontAwesomeIcons.moon,
-                      color: Colors.blue.shade600,
-                    ),
-                  )
-                : Container()
-          ],
-        ),
-      ),
-    );

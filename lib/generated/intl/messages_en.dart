@@ -22,7 +22,18 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "home_Discourd": MessageLookupByLibrary.simpleMessage("Discourd"),
+        "home_Whatsspp": MessageLookupByLibrary.simpleMessage("Whatss app"),
+        "home_about_me": MessageLookupByLibrary.simpleMessage("About me"),
+        "home_afreelancermobile": MessageLookupByLibrary.simpleMessage(
+            "A freelance mobile app developer"),
+        "home_hello": MessageLookupByLibrary.simpleMessage("Hello!"),
+        "home_hireme": MessageLookupByLibrary.simpleMessage("Hire me !"),
+        "home_imflutterdeveloper":
+            MessageLookupByLibrary.simpleMessage("I\'m Flutter Developer"),
         "home_mahdinaghkhani":
-            MessageLookupByLibrary.simpleMessage("mahdinaghikhani")
+            MessageLookupByLibrary.simpleMessage("Mahdinaghikhani"),
+        "home_telegram": MessageLookupByLibrary.simpleMessage("Telegeram"),
+        "homelinkdin": MessageLookupByLibrary.simpleMessage("My Linkdin")
       };
 }

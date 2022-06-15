@@ -50,11 +50,101 @@ class S {
     return Localizations.of<S>(context, S);
   }
 
-  /// `mahdinaghikhani`
+  /// `Mahdinaghikhani`
   String get home_mahdinaghkhani {
     return Intl.message(
-      'mahdinaghikhani',
+      'Mahdinaghikhani',
       name: 'home_mahdinaghkhani',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Discourd`
+  String get home_Discourd {
+    return Intl.message(
+      'Discourd',
+      name: 'home_Discourd',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Whatss app`
+  String get home_Whatsspp {
+    return Intl.message(
+      'Whatss app',
+      name: 'home_Whatsspp',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Telegeram`
+  String get home_telegram {
+    return Intl.message(
+      'Telegeram',
+      name: 'home_telegram',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Hello!`
+  String get home_hello {
+    return Intl.message(
+      'Hello!',
+      name: 'home_hello',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `I'm Flutter Developer`
+  String get home_imflutterdeveloper {
+    return Intl.message(
+      'I\'m Flutter Developer',
+      name: 'home_imflutterdeveloper',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `A freelance mobile app developer`
+  String get home_afreelancermobile {
+    return Intl.message(
+      'A freelance mobile app developer',
+      name: 'home_afreelancermobile',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Hire me !`
+  String get home_hireme {
+    return Intl.message(
+      'Hire me !',
+      name: 'home_hireme',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `My Linkdin`
+  String get homelinkdin {
+    return Intl.message(
+      'My Linkdin',
+      name: 'homelinkdin',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `About me`
+  String get home_about_me {
+    return Intl.message(
+      'About me',
+      name: 'home_about_me',
       desc: '',
       args: [],
     );

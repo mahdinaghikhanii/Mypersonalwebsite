@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:mahdinaghikhani/generated/l10n.dart';
 import 'package:mahdinaghikhani/theme/constant.dart';
+import 'package:mahdinaghikhani/widgets/button_dropdowb/button_dropdown.dart';
+
 import 'package:url_launcher/url_launcher_string.dart';
 
 class NavigationBars extends StatelessWidget {
@@ -31,7 +33,7 @@ class DesktopNavbar extends StatelessWidget {
   Widget build(BuildContext context) {
     final localtext = S.of(context);
     return SizedBox(
-      height: 100,
+      height: 110,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
@@ -40,28 +42,21 @@ class DesktopNavbar extends StatelessWidget {
               width: 250,
               child: Row(
                 children: [
-                  SvgPicture.asset(
+                  /*  SvgPicture.asset(
                     'assets/logo/flutter.svg',
                     width: 40,
-                  ),
+                  ),*/
                   const SizedBox(
                     width: 5,
                   ),
                   Center(
-                      child: RichText(
-                          text: TextSpan(children: [
-                    TextSpan(
-                        text: localtext.home_mahdinaghkhani,
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 20)),
-                    const TextSpan(
-                        text: '',
-                        style: TextStyle(
-                            fontFamily: "IranYekan",
-                            fontWeight: FontWeight.bold,
-                            fontSize: 20,
-                            color: kblue))
-                  ]))),
+                      child: Text(localtext.home_mahdinaghkhani,
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold, fontSize: 20))),
+                  SizedBox(
+                    width: 10,
+                  ),
+                  ButtonDropDown()
                 ],
               )),
           Row(
@@ -132,22 +127,11 @@ class MobileNavbar extends StatelessWidget {
                           width: 5,
                         ),
                         Center(
-                            child: RichText(
-                                text: TextSpan(children: [
-                          TextSpan(
-                              text: textlocal.home_mahdinaghkhani,
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 16,
-                                  color: Colors.black)),
-                          const TextSpan(
-                              text: '',
-                              style: TextStyle(
-                                  fontFamily: "IranYekan",
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 20,
-                                  color: kblue))
-                        ]))),
+                            child: Text(textlocal.home_mahdinaghkhani,
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 16,
+                                    color: Colors.black))),
                       ],
                     )),
                 Row(
