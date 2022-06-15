@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:mahdinaghikhani/generated/l10n.dart';
 import 'package:mahdinaghikhani/theme/constant.dart';
-import 'package:mahdinaghikhani/widgets/button_dropdowb/button_dropdown.dart';
+import 'package:mahdinaghikhani/widgets/button_dropdown/button_dropdown.dart';
 
 import 'package:url_launcher/url_launcher_string.dart';
 
@@ -33,7 +33,7 @@ class DesktopNavbar extends StatelessWidget {
   Widget build(BuildContext context) {
     final localtext = S.of(context);
     return SizedBox(
-      height: 110,
+      //  height: 110,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
@@ -54,7 +54,7 @@ class DesktopNavbar extends StatelessWidget {
                           style: TextStyle(
                               fontWeight: FontWeight.bold, fontSize: 20))),
                   SizedBox(
-                    width: 10,
+                    width: 20,
                   ),
                   ButtonDropDown()
                 ],

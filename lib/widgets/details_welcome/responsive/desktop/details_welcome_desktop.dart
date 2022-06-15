@@ -1,6 +1,7 @@
 // ignore_for_file: unused_local_variable
 
 import 'package:flutter/material.dart';
+import 'package:mahdinaghikhani/mudole/extension.dart';
 import 'package:mahdinaghikhani/theme/constant.dart';
 import 'package:mahdinaghikhani/widgets/details_welcome/curse_btn.dart';
 import 'package:url_launcher/url_launcher_string.dart';
@@ -10,15 +11,13 @@ class DesktopCourseDetails extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final textTheme = Theme.of(context).textTheme;
-    final size = MediaQuery.of(context).size;
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: Center(
         child: Container(
           decoration: BoxDecoration(
               color: klightBlue, borderRadius: BorderRadius.circular(20)),
-          width: size.width * 0.99,
+          width: context.withs * 0.99,
           height: 500,
           child: Row(mainAxisAlignment: MainAxisAlignment.center, children: [
             Padding(
@@ -97,8 +96,8 @@ class DesktopCourseDetails extends StatelessWidget {
                   child: Center(
                       child: Image.asset(
                     'assets/img/mahdi.png',
-                    width: size.width,
-                    height: size.height,
+                    width: context.withs,
+                    height: context.heights,
                     fit: BoxFit.fill,
                   ))),
             )

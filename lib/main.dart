@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:mahdinaghikhani/generated/l10n.dart';
+import 'package:mahdinaghikhani/provider/language_provider.dart';
 import 'package:mahdinaghikhani/views/home/home_views.dart';
+import 'package:provider/provider.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -14,20 +16,25 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      localizationsDelegates: const [
-        S.delegate,
-        GlobalMaterialLocalizations.delegate,
-        GlobalWidgetsLocalizations.delegate,
-        GlobalCupertinoLocalizations.delegate,
+    return MultiProvider(
+      providers: [
+        Provider<LanguageProvider>(create: (context) => LanguageProvider())
       ],
-      supportedLocales: S.delegate.supportedLocales,
-      debugShowCheckedModeBanner: false,
-      title: '',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
+      child: MaterialApp(
+        localizationsDelegates: const [
+          S.delegate,
+          GlobalMaterialLocalizations.delegate,
+          GlobalWidgetsLocalizations.delegate,
+          GlobalCupertinoLocalizations.delegate,
+        ],
+        supportedLocales: S.delegate.supportedLocales,
+        debugShowCheckedModeBanner: false,
+        title: '',
+        theme: ThemeData(
+          primarySwatch: Colors.blue,
+        ),
+        home: const HomeView(),
       ),
-      home: const HomeView(),
     );
   }
 }
