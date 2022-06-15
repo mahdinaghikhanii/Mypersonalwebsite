@@ -33,13 +33,14 @@ class DesktopNavbar extends StatelessWidget {
   Widget build(BuildContext context) {
     final localtext = S.of(context);
     return SizedBox(
-      //  height: 110,
+      height: 120,
+      width: double.infinity,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           SizedBox(
-              height: 70,
-              width: 250,
+              height: 80,
+              width: 600,
               child: Row(
                 children: [
                   /*  SvgPicture.asset(

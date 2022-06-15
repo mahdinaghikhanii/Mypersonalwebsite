@@ -1,45 +1,45 @@
+// ignore_for_file: unrelated_type_equality_checks
+
 import 'package:flutter/material.dart';
 import 'package:mahdinaghikhani/provider/language_provider.dart';
+import 'package:mahdinaghikhani/theme/constant.dart';
 import 'package:provider/provider.dart';
 
-class ButtonDropDown extends StatelessWidget {
+class ButtonDropDown extends StatefulWidget {
   const ButtonDropDown({Key? key}) : super(key: key);
 
   @override
-  Widget build(BuildContext context) {
-    List<Map> myJson = [
-      {'id': '1', 'name': 'English', 'ontap': 'en'},
-      {'id': '2', 'name': 'فارسی', 'ontap': 'fa'}
-    ];
+  State<ButtonDropDown> createState() => _ButtonDropDownState();
+}
 
-    return DropdownButton(
-        itemHeight: 10,
-        hint: context.read<LanguageProvider>().featchlocal(),
-        onChanged: (newValue) {},
-        items: myJson.map((bankIteam) {
-          return DropdownMenuItem(
-              value: bankIteam['id'].toString(),
-              onTap: () {
-                (bankIteam['ontap']);
-                context
-                    .read<LanguageProvider>()
-                    .setLanguage(bankIteam['ontap']);
-              },
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Image.asset(
-                    bankIteam['image'],
-                    width: 25,
-                  ),
-                  Container(
-                    margin: const EdgeInsets.only(left: 10, right: 10),
-                    child: Text(
-                      bankIteam['name'],
-                    ),
-                  )
-                ],
-              ));
-        }).toList());
+class _ButtonDropDownState extends State<ButtonDropDown> {
+  List<String> items = ['English', 'Persian'];
+
+  @override
+  Widget build(BuildContext context) {
+    final languageProvider = Provider.of<LanguageProvider>(context);
+    String selectItem = context.watch<LanguageProvider>().language == "fa"
+        ? items[0]
+        : items[1];
+    return Center(
+      child: DropdownButton<String>(
+          elevation: 1,
+          isDense: false,
+          focusColor: kwhitemeloo,
+          dropdownColor: kwhitemeloo,
+          value: selectItem,
+          items: items
+              .map((item) =>
+                  DropdownMenuItem(value: item, child: Text(selectItem)))
+              .toList(),
+          onChanged: (item) {
+            if (item == 'English') {
+              languageProvider.setLanguage('en');
+            }
+            if (item == "Persian") {
+              languageProvider.setLanguage('fa');
+            }
+          }),
+    );
   }
 }
