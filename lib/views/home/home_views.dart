@@ -25,8 +25,7 @@ class HomeView extends StatelessWidget {
               children: [
                 const NavigationBars(),
                 Column(
-                  // ignore: prefer_const_literals_to_create_immutables
-                  children: [
+                  children: const [
                     CourseDetails(),
                     SizedBox(
                       height: 30,
