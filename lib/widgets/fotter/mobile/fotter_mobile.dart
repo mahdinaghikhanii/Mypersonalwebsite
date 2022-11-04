@@ -33,7 +33,10 @@ class FotterMobile extends StatelessWidget {
                 SocialNetwork(
                   text: "Telegram",
                   logo: "assets/logo/tele.png",
-                  ontap: () async {},
+                  ontap: () async {
+                    await launchUrlString(
+                        'http://flutterbooksample.com/book/1');
+                  },
                 ),
                 const SizedBox(
                   width: 15,
@@ -53,8 +56,7 @@ class FotterMobile extends StatelessWidget {
                   text: "Whatsapp",
                   logo: "assets/logo/whatsapp.png",
                   ontap: () async {
-                    await launchUrlString(
-                        'xcrun simctl openurl booted customscheme://flutterbooksample.com/book/1');
+                    await launchUrlString('://flutterbooksample.com/book/1');
                   },
                 )
               ],
