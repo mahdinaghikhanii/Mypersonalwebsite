@@ -52,7 +52,10 @@ class FotterMobile extends StatelessWidget {
                 SocialNetwork(
                   text: "Whatsapp",
                   logo: "assets/logo/whatsapp.png",
-                  ontap: () {},
+                  ontap: () async {
+                    await launchUrlString(
+                        'xcrun simctl openurl booted customscheme://flutterbooksample.com/book/1');
+                  },
                 )
               ],
             )
