@@ -49,9 +49,7 @@ class FotterMobile extends StatelessWidget {
                         'https://twitter.com/mahdinaghikhani');
                   },
                 ),
-                const SizedBox(
-                  width: 15,
-                ),
+                const SizedBox(width: 15),
                 SocialNetwork(
                   text: "Whatsapp",
                   logo: "assets/logo/whatsapp.png",
